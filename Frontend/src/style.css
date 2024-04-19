@@ -2,12 +2,14 @@
 
 body{
     background-color: rgb(217, 217, 217);
+    background-image: url("../public/2.gif");
+    font-family: "Poppins";
 }
 
 nav > div{
     background-color: rgb(0,0,0);
     height: 100%;
-    width: 6vh;
+    width: 8vh;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -19,7 +21,7 @@ nav > div{
 nav button{
     font-size: 3vh;
     padding: none;
-    margin-left: 1vh;
+    margin-left: 2vh;
     margin-bottom: 10vh;
     border: none;
     color: rgb(217, 217, 217);
@@ -29,7 +31,7 @@ nav button{
 .option-first{
     font-family: "Poppins", sans-serif;
     font-size: 2.3vh;
-    color: rgb(217, 217, 217);
+    color: rgb(255, 97, 39);
     transform: rotate(270deg);
     margin-bottom: 12vh;
 }
@@ -47,13 +49,69 @@ nav button{
     cursor: pointer;
 }
 
-body > div{
-    position: fixed;
-    background: none;
-    padding: 27.77vh;
-    padding-left: 74vh;
-    font-family: "Poppins", sans-serif;
-    font-size: 3vh;
-    font-weight: 300;
+
+.portfolio{
     color: rgb(37, 36, 36);
+    font-size: 7vh;
+    font-weight: 500;
+    margin-left: 80vh;
+    margin-top: 6vh;
+    margin-bottom: 4vh;
+    text-shadow: 0.4vh 0.4vh rgb(190, 190, 190);
+}
+
+.made-using{
+    display: inline;
+    color: rgb(37, 36, 36);
+    font-size: 3.5vh;
+    font-weight: 400;
+    margin-left: 70vh;
+}
+
+.tools{
+    background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(225, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(97, 183, 217) 52%, rgb(224, 246, 255) 60%, rgb(78, 99, 132) 61%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.js{
+    background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(225, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(97, 183, 217) 52%, rgb(224, 246, 255) 60%, rgb(78, 99, 132) 61%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 80vh;
+}
+
+.about-content-block{
+    background: rgb(37, 36, 36);
+    padding: 5vh;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    margin: 15vh;
+    margin-top: 18vh;
+    border-radius: 2vh;
+    position: absolute;
+    box-shadow: 1vh 1vh rgb(190, 190, 190);
+}
+
+.about-content{
+    background: none;
+    margin: 0vh;
+    padding: 0vh;
+    width: 30em;
+    color: rgb(217, 217, 217);
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5vh;
+    font-weight: 300;
+    text-align: start;
+}
+
+.gik-link{
+    text-decoration: none;
+    color: rgb(217, 217, 217);
+}
+
+.gik-link:hover{
+    text-decoration: underline;
 }
