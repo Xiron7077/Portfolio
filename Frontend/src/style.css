@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sedan:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
 
 body{
     background-color: rgb(217, 217, 217);
-    background-image: url("../public/2.gif");
+    background-image: url("../public/background.gif");
     font-family: "Poppins";
 }
 
@@ -14,14 +17,14 @@ nav > div{
     z-index: 1;
     top: 0;
     left: 0;
-    padding-top: 3vh;
+    padding-top: 5vh;
     overflow-x: hidden;
 }
 
 nav button{
     font-size: 3vh;
     padding: none;
-    margin-left: 2vh;
+    margin-left: 1.7vh;
     margin-bottom: 10vh;
     border: none;
     color: rgb(217, 217, 217);
@@ -31,9 +34,32 @@ nav button{
 .option-first{
     font-family: "Poppins", sans-serif;
     font-size: 2.3vh;
-    color: rgb(255, 97, 39);
-    transform: rotate(270deg);
     margin-bottom: 12vh;
+}
+
+.option-first > div{
+    display: flex;
+    flex-direction: row;
+}
+
+.option-first img{
+    width: 4vh;
+    margin-left: 2vh;
+    background: none;
+}
+
+.option-first hr{
+    margin: 0;
+    width: 4.6vh;
+    position: absolute;
+    left: 1.55vh;
+    border-color: rgb(255, 97, 39);
+}
+
+.option-first p{   
+    color: rgb(217, 217, 217); 
+    margin-top: 1vh;
+    display: none;
 }
 
 .option{
@@ -44,43 +70,33 @@ nav button{
     margin-bottom: 14vh;
 }
 
-.option:hover, .option-first:hover{
+.option:hover{
     color: rgb(255, 97, 39);
     cursor: pointer;
 }
 
-
 .portfolio{
     color: rgb(37, 36, 36);
     font-size: 7vh;
+    font-family: "Sedan", "Merriweather", "Noto Serif JP";
     font-weight: 500;
-    margin-left: 80vh;
     margin-top: 6vh;
     margin-bottom: 4vh;
     text-shadow: 0.4vh 0.4vh rgb(190, 190, 190);
+    text-align: center;
 }
 
 .made-using{
-    display: inline;
     color: rgb(37, 36, 36);
     font-size: 3.5vh;
     font-weight: 400;
-    margin-left: 70vh;
+    text-align: center;
 }
 
-.tools{
-    background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(225, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(97, 183, 217) 52%, rgb(224, 246, 255) 60%, rgb(78, 99, 132) 61%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.js{
-    background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(225, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(97, 183, 217) 52%, rgb(224, 246, 255) 60%, rgb(78, 99, 132) 61%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-left: 80vh;
+.made-using > p{
+        /* background-image: url("../public/6.gif");
+        background-position: center;
+        background-repeat: repeat; */
 }
 
 .about-content-block{
@@ -107,11 +123,11 @@ nav button{
     text-align: start;
 }
 
-.gik-link{
+.about-content > a{
     text-decoration: none;
     color: rgb(217, 217, 217);
 }
 
-.gik-link:hover{
+.about-content > a:hover{
     text-decoration: underline;
 }
